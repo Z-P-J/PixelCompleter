@@ -3,6 +3,7 @@ from k_svd import KSVD
 from omp import OMP
 import numpy as np
 import cv2
+import  os
 
 
 class PixelCompleter:
@@ -28,6 +29,8 @@ class PixelCompleter:
         :param data_set_dir 数据集路径
         """
         self.data_set_manager.set_data_set_dir(data_set_dir)
+        if not os.path.exists(data_set_dir):
+            os.makedirs(data_set_dir)
         return self
 
     def set_loss_img_dir(self, loss_img_dir):
@@ -36,6 +39,8 @@ class PixelCompleter:
         :param loss_img_dir 像素缺失处理图片保存路径
         """
         self.loss_img_dir = loss_img_dir
+        if not os.path.exists(loss_img_dir):
+            os.makedirs(loss_img_dir)
         return self
 
     def set_reconstruct_img_dir(self, reconstruct_img_dir):
@@ -44,6 +49,8 @@ class PixelCompleter:
         :param reconstruct_img_dir 重建的人脸图像保存路径
         """
         self.reconstruct_img_dir = reconstruct_img_dir
+        if not os.path.exists(reconstruct_img_dir):
+            os.makedirs(reconstruct_img_dir)
         return self
 
     def set_loss_rate(self, loss_rate):
@@ -145,5 +152,5 @@ if __name__ == "__main__":
         .set_loss_img_dir('D:\\Programming\\YaleB\\LossImg\\')\
         .set_reconstruct_img_dir('D:\\Programming\\YaleB\\RecImg\\')\
         .set_loss_rate(50)\
-        .set_iter_times(30)\
+        .set_iter_times(20)\
         .start()

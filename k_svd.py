@@ -75,7 +75,7 @@ class KSVD:
             # 计算误差
             e = np.linalg.norm(Y - np.dot(self.dictionary, X))
             total = total + e
-            print(str('第%s次迭代 误差=%s' % (j, e)) + '\n')
+            print('第%s次迭代 误差=%s\n' % (j, e))
             # 如果误差小于稀疏表示结果的容差，则跳出迭代
             if e < self.sigma:
                 break

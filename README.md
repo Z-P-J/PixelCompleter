@@ -41,7 +41,7 @@ PixelCompleter()\
 # 参考资料
 [1]. k-svd实现人脸缺失像素补全https://blog.csdn.net/anonymity_/article/details/85196505
 
-[2]. https://ieeexplore.ieee.org/document/4483511
+[2]. Robust Face Recognition via Sparse Representation https://ieeexplore.ieee.org/document/4483511
 
 [3]. 基于压缩传感的匹配追踪重建算法研究 高睿
 
