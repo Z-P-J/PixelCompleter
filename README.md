@@ -24,6 +24,7 @@ Yale B 数据集，38张192*168的人脸正面图像
 
 # 如何使用
 ```python
+from pixel_completer import PixelCompleter
 PixelCompleter()\
         .set_data_set_dir('您的数据集目录')\
         .set_loss_img_dir('您的像素缺失图片保存目录')\
@@ -32,6 +33,10 @@ PixelCompleter()\
         .set_iter_times(30)\
         .start()
 ```
+
+# 结果
+![像素缺失](https://raw.githubusercontent.com/Z-P-J/PixelCompleter/master/LossImg/loss0.jpg)
+![重建](https://raw.githubusercontent.com/Z-P-J/PixelCompleter/master/RecImg/rec0.jpg)
 
 # 参考资料
 [1]. k-svd实现人脸缺失像素补全https://blog.csdn.net/anonymity_/article/details/85196505
