@@ -37,6 +37,8 @@ PixelCompleter()\
 # 结果
 ![像素缺失](https://raw.githubusercontent.com/Z-P-J/PixelCompleter/master/LossImg/loss0.jpg)
 ![重建](https://raw.githubusercontent.com/Z-P-J/PixelCompleter/master/RecImg/rec0.jpg)
+![像素缺失](https://raw.githubusercontent.com/Z-P-J/PixelCompleter/master/LossImg/loss1.jpg)
+![重建](https://raw.githubusercontent.com/Z-P-J/PixelCompleter/master/RecImg/rec1.jpg)
 
 # 参考资料
 [1]. k-svd实现人脸缺失像素补全https://blog.csdn.net/anonymity_/article/details/85196505
